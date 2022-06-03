@@ -1,4 +1,16 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tiro+Devanagari+Hindi&display=swap');
+
+header {
+    /* display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #FF7A00; */
+    
+
+} 
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -23,6 +35,15 @@ article {
 
 .bloco-texto-p {
     padding: 0px 40px 20px 40px;
+}
+
+
+
+
+
+/* footer */
+.social-media-footer img{
+  width: 50px;
 }
 
 .bloco-texto h3 {
@@ -71,4 +92,26 @@ button {
 }
 #img-pessoas{
     padding: 30px 0px 30px 0px;
+
+}
+
+main{
+    max-width: 100%;
+}
+
+@media screen and (max-width:800px){
+    article{
+        width: 90%;
+        display: block; /* Stops it from floating */
+        margin: auto; /* Ensures that it is centered */
+        margin-bottom: 25px; /* Space between the stacked elements */
+
+    }
+    
+    .bloco-imagem {
+        width: 100%;
+    }
+    .bloco-texto {
+        width: 100%;
+    }
 }
