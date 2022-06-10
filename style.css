@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tiro+Devanagari+Hindi&display=swap');
+
+
+/* estiliza header desktop */
+.header-desktop {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(239, 240, 232);
+}
+
+/* esconde header mobile */
+.header-mobile {
+    display: none;
+}
+
+/* estiliza itens do menu  */
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: rgba(239, 240, 232);
+    margin: 0;
+    padding: 0;
+}
+
+/* estiliza itens do menu */
+header a {
+    letter-spacing: -0.01em;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    color: #2d314d;
+    text-decoration: none;
+    padding: 20px;
+}
+
+/* estiliza body */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: #2d314d;
+    background-color: rgba(239, 240, 232)
+}
+
+/* layout dos articles */
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* layout dos blocos texto */
+.bloco-texto {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.bloco-texto-p {
+    padding: 0px 40px 20px 40px;
+}
+
+.bloco-texto h3 {
+    padding: 20px 40px 10px 40px;
+}
+
+/* tamanho icones social media */
+footer .social-media-footer img {
+    width: 50px;
+}
+
+/* layout dos blocos de imagem */
+.bloco-imagem {
+    width: 50%;
+    justify-content: center;
+    display: flex;
+}
+
+.bloco-imagem img {
+    width: 70%;
+}
+
+/* cor dos blocos articles */
+.article-branco {
+    background-color: #F5F6FA;
+}
+
+.article-laranja {
+    background-color: #FF7A00;
+}
+
+.article-laranja .inner-bloco-texto {
+    color: wheat;
+}
+
+/* estiliza botao */
+button {
+
+    background-color: #FF7A00;
+    display: inline-flex;
+    align-items: center;
+    margin: 40px;
+    color: whitesmoke;
+    font-size: 15px;
+    border-radius: 8px;
+    margin-right: 15px;
+    border: 4px solid #FF7A00;
+    height: 46px
+}
+
+/* estiliza primeira imagem */
+#img-pessoas {
+    padding: 30px 0px 30px 0px;
+
+}
+
+/* footer */
+.social-media-footer img {
+    width: 50px;
+}
+
+
+/* footer */
+/* posição fixada no bottom, tamanho de largura 100%, cor de fundo cinza, cor da letra laranja */
+footer {
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(239, 240, 232);
+    color: rgb(240, 116, 0);
+    font-size: 1rem;
+    padding: 0px;
+}
+
+/* Espaçamento da margem ao texto */
+footer .caixas {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Tirar as bolinhas da lista */
+li {
+    list-style: none;
+}
+
+/* Coloca a cor do link laranja */
+footer a:link {
+    color: rgb(240, 116, 0);
+}
+
+/* tamanho da imagem das redes*/
+.social-media-footer img {
+    width: 50px;
+}
+
+.social-media-footer {
+    align-self: flex-end;
+}
+
+/* tamanho da imagem do rodapé logo */
+.logo-footer img {
+    width: 150px;
+}
+
+/* alinhar a lista de suporte */
+.caixas>ul {
+    align-self: center;
+    margin-top: 0;
+}
+
+/* alinhar a logo do footer no meio */
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* alinhar o endereço */
+.endereco {
+    font-size: 1rem;
+    align-self: center;
+}
+
+/* alinhar o copyright */
+.copy {
+    font-size: 0.75rem;
+    /* align-self: center; */
+    text-align: center;
+}
+
+
+@media screen and (max-width:800px) {
+
+    /* deixa os blocos do main responsivos */
+    article {
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    /* aumenta o bloco imagem */
+    .bloco-imagem {
+        width: 100%;
+    }
+
+    /* aumenta o bloco texto */
+    .bloco-texto {
+        width: 100%;
+    }
+
+    footer .caixas {
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    /* esconde o menu desktop */
+    .header-desktop {
+        display: none;
+    }
+
+    /* estiliza a header mobile */
+    .header-mobile {
+        display: block;
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+
+    /* esconde os items de menu mobile */
+    .header-mobile #itemsMenuMobile {
+        display: none;
+    }
+
+    /* estiliza os items do menu mobile */
+    .header-mobile a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    /* estiliza o menu hamburger */
+    .header-mobile a.icon {
+        background: #333;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    /* adiciona um efeito de hover na header mobile */
+    .header-mobile a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+}
